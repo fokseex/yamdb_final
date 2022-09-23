@@ -19,6 +19,8 @@ jobs:
         pip install -r ./api_yamdb/requirements.txt
     - name: Test with flake8 and django tests
       run: |
+        touch .env
+        echo DJANGO_SECRET_KEY=${{ secrets.DJANGO_SECRET_KEY }} >> .env
         python -m flake8
         cd api_yamdb/
         python manage.py test

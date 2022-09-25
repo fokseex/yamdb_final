@@ -3,7 +3,7 @@ from datetime import timedelta
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', default=None)
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', default='1234567890')
 
 DEBUG = False
 

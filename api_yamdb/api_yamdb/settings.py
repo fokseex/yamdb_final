@@ -2,10 +2,7 @@ import os
 from datetime import timedelta
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# меняю строчку на os.getenv('DJANGO_SECRET_KEY', default='1234567890')
-# падают тест или выдает ошибку
-# Warning: Unexpected input(s) 'script', valid inputs are
-# ['python-version', 'cache', 'architecture', 'token', 'cache-dependency-path']
+
 SECRET_KEY = 'p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'
 
 DEBUG = False
